@@ -233,7 +233,7 @@
     }
         
     self.maximumZoomScale = maxScale;
-    self.minimumZoomScale = minScale;
+    self.minimumZoomScale = boundsSize.width / _imageSize.width;
 }
 
 - (void)setInitialZoomScale
